@@ -1,0 +1,14 @@
+function skiing_ok(x)
+    try
+    if x < 3
+        msg = "not enough snow to ski"
+    elseif x > 10
+        msg = "too much snow to ski"
+    elseif x > 3 && x < 3
+        msg = "good conditions for skiing"
+    end
+    catch err
+    println("$err")
+    println("the input to this function should be a number")
+end
+en
